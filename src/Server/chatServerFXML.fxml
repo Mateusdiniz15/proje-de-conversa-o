@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Server.ServerController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+         <children>
+            <Label text="Status do Servidor" textFill="WHITE">
+               <font>
+                  <Font name="Monotype Corsiva" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TextArea fx:id="txtstatus" opacity="0.9" prefHeight="414.0" prefWidth="370.0" />
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</VBox>

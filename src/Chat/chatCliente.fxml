@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="627.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Chat.ClientController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="usuarionome" prefHeight="17.0" prefWidth="99.0" text="Label" textFill="#cd0e0e">
+               <font>
+                  <Font size="19.0" />
+               </font></Label>
+            <Label text="Visualizador das Mensagens" textFill="WHITE">
+               <font>
+                  <Font name="Monotype Corsiva" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TextArea fx:id="txtmsg" opacity="0.9" prefHeight="220.0" prefWidth="400.0" />
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+         <children>
+            <Label text="Digite a Mensagem" textFill="WHITE">
+               <font>
+                  <Font name="Monotype Corsiva" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TextArea fx:id="txtinput" opacity="0.9" prefHeight="116.0" prefWidth="400.0" />
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btndesconnect" mnemonicParsing="false" onAction="#handleconnection" text="Desconectar do Servidor">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnconnect" mnemonicParsing="false" onAction="#handleconnection" text="Conectar ao Servidor">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="52.0" prefWidth="395.0">
+         <children>
+            <Button fx:id="btnsend" mnemonicParsing="false" onAction="#handlesend" text="Enviar">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnexit" mnemonicParsing="false" onAction="#handledexit" text="Sair">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</VBox>

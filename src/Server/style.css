@@ -1,0 +1,10 @@
+/* 
+    Created on : 11/04/2021, 17:54:54
+    Author     : Mateus Fernando Diniz
+*/
+
+.root {
+    -fx-background-image: url(fundo.jpg);
+    -fx-background-size: 100% 100%;
+}
+
